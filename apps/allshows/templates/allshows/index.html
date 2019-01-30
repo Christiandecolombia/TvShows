@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <h1>All Shows</h1>
+    {% for m in allshows %}
+    <!-- {% csrf_token %} -->
+    <table>
+        <tr>
+            <th>{{m.id}}</th>
+            <th>{{m.title}}</th>
+            <th>{{m.network}}</th>
+            <th>{{m.date}}</th>
+            <th>{{m.desc}}</th>
+            <th><a href='edit/{{m.id}}'>edit</a></th>
+            <th><a href='delete/{{m.id}}'>delete</a></th>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <p><a href="/new">Add a new Show</a></p>
+
+</body>
+
+</html>

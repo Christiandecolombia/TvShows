@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <h1>View</h1>
+    <table>
+        <tr>
+            <th>{{allshows.id}}</th>
+            <th>{{allshows.title}}</th>
+            <th>{{allshows.network}}</th>
+            <th>{{allshows.date}}</th>
+            <th>{{allshows.desc}}</th>
+            <th><a href='edit/{{allshows.id}}'>edit</a></th>
+        </tr>
+    </table>
+    <a href=delete/{{allshows.id}}>delete</a>
+
+
+
+</body>
+
+</html>
